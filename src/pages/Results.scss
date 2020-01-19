@@ -1,0 +1,131 @@
+.results-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 70px;
+    .pick{
+        width: 225;
+        height: auto;
+        margin: 70px 0 48px;
+        @media screen and (max-width: 1020px) {
+            margin: 0 0 28px;
+        }
+    }
+    h2{
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 79px;
+        margin: 0 0 78px;
+        @media screen and (max-width: 575px) {
+            font-size: 40px;
+            line-height: 49px;
+            max-width: 245px;
+            text-align: center;
+            margin: 0 0 28px;
+        }
+    }
+    .row-card-results{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 50px;
+        grid-gap:53px 30px;
+        @media screen and (max-width: 1020px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 575px) {
+            grid-template-columns: 1fr;
+        }
+        .card{
+            width: 268px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            img{
+                max-width: 170px;
+            }
+            h3{
+                color: #15573F;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+                align-self: flex-start;
+            }
+            .info{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 10px 0px;
+                width: 100%;
+                .left-side{
+                    .price{
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: #6E6E6E;
+                    }
+                }
+                .right-side{
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        li{
+                            width: 30px;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 22px;
+                                height: 22px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
+                            &.highSun{
+                                &::before{
+                                    background-image: url(../assets/icons/HighSun.svg);
+                                }
+                            }
+                            &.lowSun{
+                                &::before{
+                                    background-image: url(../assets/icons/LowSun.svg);
+                                }
+                            }
+                            &.noSun{
+                                &::before{
+                                    background-image: url(../assets/icons/NoSun.svg);
+                                }
+                            }
+                            &.threeDrop{
+                                &::before{
+                                    background-image: url(../assets/icons/ThreeDrops.svg);
+                                    width: 35px;
+                                }
+                            }
+                            &.twoDrop{
+                                &::before{
+                                    background-image: url(../assets/icons/TwoDrops.svg);
+                                }
+                            }
+                            &.oneDrop{
+                                &::before{
+                                    background-image: url(../assets/icons/OneDrop.svg);
+                                }
+                            }
+                            &.toxic{
+                                &::before{
+                                    background-image: url(../assets/icons/Toxic.svg);
+                                }
+                            }
+                            &.nonToxic{
+                                &::before{
+                                    background-image: url(../assets/icons/Pet.svg);
+                                    width: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

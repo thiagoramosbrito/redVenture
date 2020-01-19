@@ -1,0 +1,17 @@
+input{
+    width: 285px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 19px;  
+    border: none; 
+    font-size: 14px;
+    line-height: 27px;
+    padding: 0 0 0 24px;
+    &.name-input{
+        margin: 0 0 22px ;
+    }
+    &.is-invalid-input{
+        color: #F71D1D;
+        border: 1px solid #F71D1D;
+    } 
+}

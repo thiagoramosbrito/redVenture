@@ -1,0 +1,369 @@
+.carrossel-container{
+    display: block;
+    text-align: center;
+    .carousel{
+        .slide{
+            background: none;
+            .slide-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    font-weight: lighter;
+                    font-size: 30px;
+                    line-height: 45px;
+                    text-align: center;
+                    max-width: 450px;
+                    color: #6E6E6E;
+                    @media screen and (max-width: 500px) {
+                        margin: 0 0 20px;
+                        font-size: 22px;
+                    }
+                }
+                h3{
+                    font-size: 16px;
+                    line-height: 34px;
+                    font-weight: lighter;
+                    color: #6E6E6E;
+                }
+                img{
+                    margin: 0 0 30px;
+                    &.sun{
+                        max-width: 125px;
+                    }
+                    &.wateringcan{
+                        max-width: 145px;
+                    }
+                    &.dog{
+                        max-width: 105px;
+                    }
+                }
+                .row-card-buttons{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    @media screen and (max-width: 500px) {
+                        flex-direction: column;
+                    }
+                    .card{
+                        width: 215px;
+                        height: 190px;   
+                        background: #ffffff;
+                        margin: 65px 15px 10px;
+                        transition: all .3s ease;
+                        cursor: pointer;
+                        border-radius: 5px;   
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;      
+                        &:hover h3{
+                            font-weight: bold;
+                            color: white;
+                        }
+                        @media screen and (max-width: 500px) {
+                            flex-direction: row;
+                            width: auto;
+                            height: 74px;
+                            margin: 20px 15px 10px;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+                &.slide-one{
+                    h2{
+                        @media screen and (max-width: 500px) {
+                            max-width: 230px;
+                        }
+                    }
+                    .sun{
+                        @media screen and (max-width: 500px) {
+                            margin: 0 0 21px;
+                        }
+                    }
+                    .row-card-buttons{
+                        .card{
+                            &:nth-child(1){
+                                i{
+                                    width: 70px;
+                                    height: 70px;
+                                    background-image: url(../assets/quiz/icons/HighSun.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 20px;
+                                        width: 42px;
+                                        height: 42px;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                i{
+                                    width: 70px;
+                                    height: 70px;
+                                    background-image: url(../assets/quiz/icons/LowSun.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 20px;
+                                        width: 42px;
+                                        height: 42px;
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                i{
+                                    width: 70px;
+                                    height: 70px;
+                                    background-image: url(../assets/quiz/icons/NoSun.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 20px;
+                                        width: 38px;
+                                        height: 38px;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                background: #FD9872;
+                                &:nth-child(1){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/HighSunHover.svg);
+                                    }
+                                }
+                                &:nth-child(2){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/LowSunHover.svg);
+                                    }
+                                }
+                                &:nth-child(3){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/NoSunHover.svg);
+                                    }
+                                }
+                            }
+                            &.clicked{
+                                background: #FD9872;
+                                h3{
+                                    font-weight: bold;
+                                    color: white;
+                                }
+                                &:nth-child(1){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/HighSunHover.svg);
+                                    }
+                                }
+                                &:nth-child(2){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/LowSunHover.svg);
+                                    }
+                                }
+                                &:nth-child(3){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/NoSunHover.svg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.slide-two{
+                    h2{
+                        @media screen and (max-width: 500px) {
+                            max-width: 265px;
+                        }
+                    }
+                    .wateringcan{
+                        @media screen and (max-width: 500px) {
+                            margin: 0 0 25px;
+                        }
+                    }
+                    .row-card-buttons{
+                        .card{
+                            &:nth-child(1){
+                                i{
+                                    width: 65px;
+                                    height: 70px;
+                                    background-image: url(../assets/quiz/icons/OneDrop.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 34px 0 28px;
+                                        width: 35px;
+                                        height: 35px;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                i{
+                                    width: 70px;
+                                    height: 63px;
+                                    background-image: url(../assets/quiz/icons/TwoDrops.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 28px 0 32px;
+                                        width: 39px;
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                i{
+                                    width: 94px;
+                                    height: 63px;
+                                    background-image: url(../assets/quiz/icons/ThreeDrops.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 24px 0 23px;
+                                        width: 52px;
+                                        height: 35px;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                background: #7BAF9E;
+                                &:nth-child(1){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/OneDropHover.svg);
+                                    }
+                                }
+                                &:nth-child(2){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/TwoDropsHover.svg);
+                                    }
+                                }
+                                &:nth-child(3){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/ThreeDropsHover.svg);
+                                    }
+                                }
+                            }
+                            &.clicked{
+                                background: #7BAF9E;
+                                h3{
+                                    font-weight: bold;
+                                    color: white;
+                                }
+                                &:nth-child(1){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/OneDropHover.svg);
+                                    }
+                                }
+                                &:nth-child(2){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/TwoDropsHover.svg);
+                                    }
+                                }
+                                &:nth-child(3){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/ThreeDropsHover.svg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.slide-three{
+                    h2{
+                        max-width: 650px;
+                        margin: 0 0 21px;
+                        @media screen and (max-width: 500px) {
+                            max-width: 290px;
+                            margin-bottom: 11px;
+                        }
+                    }
+                    .dog{
+                        @media screen and (max-width: 500px) {
+                            margin: 0 0 30px;
+                        }
+                    }
+                    p{
+                        color: #6E6E6E;
+                        font-size: 14px;
+                        line-height: 39px;
+                        @media screen and (max-width: 500px) {
+                            max-width: 253px;
+                            margin-bottom: 11px;
+                        }
+                    }
+                    .row-card-buttons{
+                        .card{
+                            &:nth-child(1){
+                                i{
+                                    width: 94px;
+                                    height: 70px;
+                                    background-image: url(../assets/quiz/icons/Pet.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 18px;
+                                        width: 45px;
+                                        height: 34px;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                i{
+                                    width: 70px;
+                                    height: 70px;
+                                    background-image: url(../assets/quiz/icons/NoSun.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    @media screen and (max-width: 500px) {
+                                        margin: 0 20px 0 18px;
+                                        width: 42px;
+                                        height: 42px;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                background: #FD9872;
+                                &:nth-child(1){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/PetHover.svg);
+                                    }
+                                }
+                                &:nth-child(2){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/NoSunHover.svg);
+                                    }
+                                }
+                            }
+                            &.clicked{
+                                background: #FD9872;
+                                h3{
+                                    font-weight: bold;
+                                    color: white;
+                                }
+                                &:nth-child(1){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/PetHover.svg);
+                                    }
+                                }
+                                &:nth-child(2){
+                                    i{
+                                        background-image: url(../assets/quiz/icons/NoSunHover.svg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .buttons-row{
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        max-width: 705px;
+        @media screen and (max-width: 500px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 30px 0;
+        }
+    }
+}

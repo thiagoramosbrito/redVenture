@@ -1,0 +1,41 @@
+.fixed-logo-container{
+    .fixed-logo{
+        position: fixed;
+        top:50px;
+        left:50px;
+        z-index: 5;
+        @media screen and (max-width: 825px) {
+            display: none;
+        }
+        &::before{
+            content: "";
+            border-left: 6px solid green;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+    
+        }
+    }
+    .verticalLine {
+        position: fixed;
+        border-left: 1px solid #15573F;
+        height: 280px;
+        top: 290px;
+        left: 60px;
+        @media screen and (max-width: 825px) {
+            display: none;
+        }
+    }
+    &.results{
+        @media screen and (max-width: 1020px) {
+            display: none;
+        }
+    }
+    &.purchase{
+        @media screen and (max-width: 980px) {
+            display: none;
+        }
+    }
+}
